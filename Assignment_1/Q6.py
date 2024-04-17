@@ -2,12 +2,14 @@
 # The function accepts the number as an argument.
 
 def factorial(n):
-    # Check if the number 'n' is 0
-    if n == 0:
-        return 1
-    else:
-        return n * factorial(n - 1)
+    i=1
+    fact=1
+    while i<=n:
+       fact=fact*i
+       i=i+1
+        
+    print(f"factorial= ",fact)
 
-n = int(input("Input a number to compute the factorial: "))
 
-print(factorial(n))
+n = int(input("Enter a number: "))
+factorial(n)
